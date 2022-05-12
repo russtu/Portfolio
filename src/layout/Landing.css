@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+
+/* HEADER */
+
+#menu {
+  display: flex;
+  background-color: rgb(48, 47, 47);
+  font-size: x-small;
+  color: antiquewhite;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  border-bottom: 1px solid antiquewhite;
+}
+#buttonMenu {
+  font-size: xx-large;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: left;
+  padding-left: 20px;
+  color:antiquewhite;
+}
+
+.menuOff {
+  display: none;
+}
+
+.menuOn {
+  transition-delay: 2000ms;
+}
+
+#header-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: x-small;
+}
+#name {
+  font-size: x-large;
+}
+
+#name2 {
+  width: 90px;
+  font-family: Dancing Script, sans-serif;
+  font-size: x-large;
+}
+
+/* PRESENTATION */
+
+#presentation-section {
+  text-align: center;
+  background-image: url('../../public/pexels-lukas-574069.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#description-presentation {
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: left;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 50vh;
+  width: 50%;
+}
+
+/* PROJECTS */
+
+#project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.title-section {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 20px;
+  width: 320px;
+  min-height: 600px;
+  border: 1px solid black;
+  background-color: rgb(48, 47, 47);
+  border-radius: 5px;
+  color: antiquewhite;
+  justify-content: space-around;
+}
+
+.title-project {
+  font-family: Dancing Script, sans-serif;
+  font-size: xx-large;
+  margin: 5px 5px;
+}
+
+.container-photo-project {
+  border: 1px solid antiquewhite;
+}
+
+.photo-project {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.links-project {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+.github-link {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-demo-project {
+  padding-top: 20px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.description-project {
+  height: 50px;
+}
+
+.technologies-project {
+  margin-top: 30px;
+  font-family: Roboto Flex, sans-serif;
+}
+
+/* TECHNOLOGIES */
+
+#technologies-section {
+  height: fit-content;
+  width: 100vw;
+  text-align: center;
+}
+
+#technologies-container {
+  border: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: rgb(48, 47, 47);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 15px;
+  padding: 60px;
+  border-radius: 170px;
+  gap: 25px;
+  align-items: center;
+  list-style: none;
+  color: antiquewhite;
+}
+
+/* FOOTER */
+
+#footer {
+  margin-top: 120px;
+  background-color: rgb(48, 47, 47);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: antiquewhite;
+  padding: 20px;
+  gap: 10px;
+}
+
+.footer-links {
+  background-color: antiquewhite;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* ELEMENTS */
+
+.scrollTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: antiquewhite;
+  color: rgb(48, 47, 47);
+  border: 1px solid rgb(48,47, 47);
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+  padding: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(6, 72, 227);
+}
+
+#arrows {
+  margin-bottom: 20px;
+}
+
+.icons {
+  font-size: xx-large;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width : 800px) {
+  .container-project {
+    width: 500px;
+  }
+  #technologies-section {
+    width: 70vw;
+    margin: auto;
+  }
+  #technologies-container {
+    border-radius: 10px;
+  }
+  .scrollTop {
+    display: block;
+  }
+}
