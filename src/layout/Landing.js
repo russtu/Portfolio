@@ -1,7 +1,6 @@
 import { Menu } from '../components/Menu'
-import { FaGithubAlt, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaFigma } from 'react-icons/fa'
-import { BsArrowUp } from "react-icons/bs"
-import { FaLinkedin } from 'react-icons/fa'
+import { FaGithubAlt, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaFigma, FaFileDownload, FaLinkedin } from 'react-icons/fa'
+import { BsArrowUp, BsFillCloudDownloadFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 import { BiLinkAlt } from "react-icons/bi"
 import { SiExpress, SiJavascript, SiMysql, SiPostman } from "react-icons/si";
@@ -110,9 +109,11 @@ export const Landing = ({ open, setOpen }) => {
         <a className='footer-links' target='_blank' rel='noreferrer' href='https://github.com/russtu?tab=repositories'><FaGithubAlt className='icons' /></a>
         <a className='footer-links' target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/ruben-cabaleiro-lopez/'><FaLinkedin className='icons' /></a>
         <a className='footer-links' target='_blank' rel='noreferrer' href="mailto:rubcalop@gmail.com?subject=Questions"><MdEmail className='icons' /></a>
+        <a href="CV-Ruben-Cabaleiro.pdf" className='footer-links cv' download="CV-Ruben-Cabaleiro.pdf"><FaFileDownload className='icons' />CV</a>
         <p>rubcalop@gmail.com</p>
         <p>+34 609619771</p>
         <p>® 2022 </p>
+        
       </footer>
     </div>
   )

@@ -3,15 +3,14 @@ export const Menu = ({ open, setOpen }) => {
   const zero = 0
   const aboutMe = document.getElementById('footer')?.offsetTop
   const projects = document.getElementById('project-section')?.offsetTop
-  const technologies = document.getElementById('footer')?.offsetTop
+  const technologies = document.getElementById('technologies-section')?.offsetTop
   const handleClick = () => {
     setOpen(!open)
   }
 
   const handleClick2 = (coord) => {
-    console.log(coord)
     setOpen(!open)
-    window.scroll(0,coord)
+    window.scroll(0,coord - 60)
   }
 
   return (
