@@ -1,6 +1,6 @@
 import { Menu } from '../components/Menu'
-import { FaGithubAlt, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaFigma, FaFileDownload, FaLinkedin } from 'react-icons/fa'
-import { BsArrowUp, BsFillCloudDownloadFill } from "react-icons/bs"
+import { FaGithubAlt, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaFigma, FaFileDownload, FaLinkedin, FaYoutube } from 'react-icons/fa'
+import { BsArrowUp } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 import { BiLinkAlt } from "react-icons/bi"
 import { SiExpress, SiJavascript, SiMysql, SiPostman } from "react-icons/si";
@@ -16,17 +16,17 @@ export const Landing = ({ open, setOpen }) => {
   }
   const positionPresentacion = document.getElementById('presentation-section')?.offsetTop
   const [scrollY, setScrolly] = useState(null)
-    window.onscroll = function() {
-        let y = window.scrollY
-        setScrolly(y)
-    }
+  window.onscroll = function () {
+    let y = window.scrollY
+    setScrolly(y)
+  }
 
   return (
     <div>
       {!open &&
         <div id='menu'>
           <div id="buttonMenu" onClick={handleClick}>☰</div>
-          <h1 className={ scrollY >= positionPresentacion ? 'menuOn' : 'menuOff' }>RUBÉN CABALEIRO LÓPEZ</h1>
+          <h1 className={scrollY >= positionPresentacion ? 'menuOn' : 'menuOff'}>RUBÉN CABALEIRO LÓPEZ</h1>
           <div></div>
         </div>
       }
@@ -40,7 +40,7 @@ export const Landing = ({ open, setOpen }) => {
           </div>
         </div>
       </header>
-      <BsArrowUp onClick={() => window.scroll(0,0)} className='icons scrollTop' />
+      <BsArrowUp onClick={() => window.scroll(0, 0)} className='icons scrollTop' />
       <section id="presentation-section">
         <h1 id="description-presentation"> Soy un desarrollador web Fullstack  recién horneado pruébame ...  </h1>
       </section>
@@ -49,7 +49,7 @@ export const Landing = ({ open, setOpen }) => {
         {projects.map(project => {
           return (
             <article key={project.id}>
-              <div  className='container-project'>
+              <div className='container-project'>
                 <h3 className='title-project'>{project.title}</h3>
                 <div className='container-photo-project'>
                   <img className='photo-project' src={project.pictureUrl} alt='foto portfolio'></img>
@@ -58,9 +58,14 @@ export const Landing = ({ open, setOpen }) => {
                   <div className='github-link'>
                     <a href={project.githubUrl}><FaGithubAlt className='icons' /></a>
                   </div>
-                  <div className='link-demo-project'>
-                    <a href={project.githubUrlFronted}><BiLinkAlt className='icons' /></a>
-                  </div>
+                  {project.projectUrl &&
+                    <div className='link-demo-project'>
+                      <a href={project.projectUrl}><BiLinkAlt className='icons' /></a>
+                    </div>}
+                  {project.projectUrlYoutube &&
+                    <div className='link-demo-project'>
+                        <a href={project.projectUrlYoutube}><FaYoutube className='icons' /></a>
+                    </div>}
                 </div>
                 <div className='description-project'>{project.description}</div>
                 <div className='technologies-project'>{project.tecnologias}</div>
@@ -113,7 +118,7 @@ export const Landing = ({ open, setOpen }) => {
         <p>rubcalop@gmail.com</p>
         <p>+34 609619771</p>
         <p>® 2022 </p>
-        
+
       </footer>
     </div>
   )
