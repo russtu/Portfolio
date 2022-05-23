@@ -42,7 +42,8 @@ export const Landing = ({ open, setOpen }) => {
       </header>
       <BsArrowUp onClick={() => window.scroll(0, 0)} className='icons scrollTop' />
       <section id="presentation-section">
-        <h1 id="description-presentation"> Soy un desarrollador web Fullstack  recién horneado pruébame ...  </h1>
+        <h2 id="description-presentation"> Soy un desarrollador web Fullstack  recién horneado pruébame ...</h2>
+        <h3 id="description-presentation2"> Con pasado con técnico robótico y electromecánico he decidido empezar en el camino que mas feliz me hace... el CODE o como digo yo<em> "dame una línea de código y no me des otra cosa..."</em></h3>
       </section>
       <section id='project-section' >
         <h2 className='title-section'> Proyectos </h2>
