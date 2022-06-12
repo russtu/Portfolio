@@ -4,7 +4,7 @@
     "title": "Adrenathure",
     "pictureUrl": "adrenathureProject.webp",
     "githubUrl": "https://github.com/russtu?tab=repositories",
-    "projectUrl": "",
+    "projectUrl": "https://adrenathure.rubencabaleiro.com/",
     "projectUrlYoutube": "https://www.youtube.com/watch?v=_lu5uSqOiZo&t=1s",
     "description": "Web api sobre contratacion de experiencias deportivas",
     "tecnologias": "React-Node+Express-Mysql"
