@@ -1,24 +1,46 @@
 [
   {
     "id": 1,
-    "title": "Adrenathure",
+    "title": "Adrenathure React App",
     "pictureUrl": "adrenathureProject.webp",
-    "githubUrl": "https://github.com/russtu?tab=repositories",
+    "githubUrl": "https://github.com/russtu/Adrenathure-Frontend",
     "projectUrl": "https://adrenathure.rubencabaleiro.com/",
     "projectUrlYoutube": "https://www.youtube.com/watch?v=_lu5uSqOiZo&t=1s",
     "description": "Web api sobre contratacion de experiencias deportivas",
-    "tecnologias": "React-Node+Express-Mysql"
+    "tecnologias": "React"
+  },
+{
+    "id": 2,
+    "title": "Adrenathure API REST",
+    "pictureUrl": "api.webp",
+    "githubUrl": "https://github.com/russtu/Adrenathure-Backend",
+    "projectUrl": "https://adrenathure.rubencabaleiro.com/",
+    "projectUrlYoutube": "",
+    "description": "API REST sobre contratacion de experiencias deportivas",
+    "tecnologias": "Node-Express-Mysql"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Portfolio",
     "pictureUrl": "portfolio.webp",
     "githubUrlBackend": "",
-    "githubUrl": "https://github.com/russtu?tab=repositories",
+    "githubUrl": "https://github.com/russtu/Portfolio",
     "projectUrl": "",
     "projectUrlYoutube": "",
     "description": "Portfolio en el que estamos",
     "tecnologias": "React"
+
+  },
+  {
+    "id": 4,
+    "title": "Library Api",
+    "pictureUrl": "api.webp",
+    "githubUrlBackend": "",
+    "githubUrl": "https://github.com/russtu/Library-API",
+    "projectUrl": "",
+    "projectUrlYoutube": "",
+    "description": "Library REST API",
+    "tecnologias": "Node-Express-Mysql"
 
   }
 ]
